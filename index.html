@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script src="js/principal.js"></script>
+    <div class="principal">
+        <form name="form">
+            <input type="text" name="textbox">
+            <table>
+                <tr class='numbers'>
+                    <td><input type='button' value='C' class='buttons' onclick='limpa()'></td> 
+                    <td><input type='button' value='<' class='buttons' onclick='volta()'></td>
+                    <td><input type='button' value='-' class='buttons' onclick='insere("-")'></td>
+                    <td><input type='button' value='+' class='buttons' onclick='insere("+")'></td>
+
+                </tr>
+                <tr class='numbers'>
+                    <td><input type="button" value='1' class='buttons' onclick="insere(1)"></td>
+                    <td><input type='button' value='2' class='buttons' onclick="insere(2)"></td>
+                    <td><input type='button' value='3' class='buttons' onclick="insere(3)"></td>
+                    <td><input type='button' value='/' class='buttons' onclick='insere("/")'></td>
+                </tr>
+                <tr class='numbers'>
+                    <td><input type='button' value='4' class='buttons' onclick='insere(4)'></td>
+                    <td><input type='button' value='5' class='buttons' onclick='insere(5)'></td>
+                    <td><input type='button' value='6' class='buttons' onclick='insere(6)'></td>
+                    <td><input type='button' value='*' class='buttons' onclick='insere("*")'></td>
+                </tr>
+                <tr class='numbers'>
+                    <td><input type='button' value='7' class='buttons' onclick='insere(7)'></td>
+                    <td><input type='button' value='8' class='buttons' onclick='insere(8)'></td>
+                    <td><input type='button' value='9' class='buttons' onclick='insere(9)'></td>
+                    <td><input type='button' value='=' class='buttons' onclick='total()'></td>
+                </tr>
+                <tr class='numbers'>
+                    <td><input type='button' value='.' class='buttons' onclick='insere(".")'></td>
+                    <td><input type='button' value='0' class='buttons' onclick='insere(0)'></td>
+                </tr>
+            </table>
+
+        </form>
+
+    </div>
+</body>
+</html>
